@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+	float n;
+	printf("Enter N : ");
+	scanf("%f",&n);
+	printf("square : %.2f",n*n);
+	printf("\ncube : %.3f",n*n*n);
