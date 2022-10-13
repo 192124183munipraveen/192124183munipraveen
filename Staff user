@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int tu,su,st;
+	printf("enter total users:");
+	scanf("%d",&tu);
+	printf("enter staff user:");
+	scanf("%d",&su);
+	if(tu>0 and su>0 and tu>su)
+	{
+	st=(tu-su)-su/3;
+	printf("student user=%d",st);
+}
+	else
+	{
+		printf("invalid:");
+	}
+}
