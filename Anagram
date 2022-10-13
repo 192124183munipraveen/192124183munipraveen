@@ -1,0 +1,44 @@
+#include<Stdio.h>
+#include<String.h>
+int main()
+{
+	char x[100],y[100],c[100];
+	int i=0,j,l=0;
+	printf("Enter X : ");
+	scanf("%s",x);
+	printf("Enter Y : ");
+	scanf("%s",y);
+	int m=strlen(x);
+	int n=strlen(y);
+	if(m==n)
+	{	
+		while(i<n)
+		{
+			for(j=0;j<n;j++)
+			{
+				if(x[i]==y[j])
+				{
+					c[i++]=x[i];
+				}
+				else
+				{
+					continue;	
+				}
+			}
+			i++;	
+		}
+		int cou=strlen(c);
+		if(cou==m and cou==n)
+		{
+			printf("anagram");
+		}
+		else
+		{
+			printf("not anagram");
+		}
+	}
+	else
+	{
+		printf("not anagram");
+	}
+}
